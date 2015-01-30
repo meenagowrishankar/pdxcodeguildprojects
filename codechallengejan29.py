@@ -3,10 +3,31 @@
 # This is the start of the function to get you started.
 
 def sleep_in(weekday, vacation):
-    if weekday == True:
-        print
+    if weekday:
+        print not True
+ elif not vacation:
+        print not True
+    elif vacation:
+        print True
+    else:
+        print True
+
+sleep_in(True, False)
+
+if True:
+    print "You are gonna sleep!"
+
+else:
+    print "wonk wonk! no sleeping in."
 
 
+
+def hello_name(name):
+    print "Hello" + " " + name + "!"
+hello_name("Bob")
+
+hello_name("Alice")
+hello_name("X")
 
 
 
