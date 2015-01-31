@@ -1,7 +1,9 @@
 phonebook = {'chris': {'name': 'Chris', 'phone': '555-555-5555'}, 'mg': {'name': 'MG', 'phone': '666-666-6666'}}
 #python chooses the order of display that suits it best.
-for x in phonebook:
-    print phonebook[x]
+for x in phonebook():
+    for y in phonebook[x]:
+        print phonebook([x][y])
+
 print "-"*75
 print "what do you wanna do?"
 print "search"

@@ -5,16 +5,16 @@
 def sleep_in(weekday, vacation):
     if weekday:
         print not True
- elif not vacation:
+    elif not vacation:
         print not True
     elif vacation:
         print True
     else:
         print True
 
-sleep_in(True, False)
+a = sleep_in(True, False)
 
-if True:
+if a:
     print "You are gonna sleep!"
 
 else:
@@ -29,6 +29,8 @@ hello_name("Bob")
 hello_name("Alice")
 hello_name("X")
 
+import time
+time.asctime()
 
 
 # sleep_in(False, False) # Should return True
