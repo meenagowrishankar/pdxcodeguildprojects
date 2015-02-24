@@ -11,6 +11,6 @@ Main sections:
   *Remove items from cart
   *Display total cost
   *Purchase function/method where inventory is deducted while cart is added.
-  ****How to save information to reopen later
+  ****How to save information to reopen later (SQL?)
   
   
