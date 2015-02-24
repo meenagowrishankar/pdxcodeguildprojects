@@ -17,9 +17,16 @@ class Profile(object):
 
 
 class Buyer(Profile):
+<<<<<<< HEAD
     pass
 
    def Cart(self):
     self.inventory = {}
     
  # we are gonna rock!
+=======
+  def Cart(self):
+    self.inventory = { }
+    
+ # we are gonna rock!
+>>>>>>> FETCH_HEAD
