@@ -15,3 +15,4 @@ class Buyer(Profile):
   def Cart(self):
     self.inventory = { }
     
+ # we are gonna rock!
