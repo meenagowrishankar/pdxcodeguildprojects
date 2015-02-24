@@ -1,4 +1,3 @@
-# yo mikey!!!!
 # Here is our initial list of items for our store. This will eventually live in another file once we
 # have set up a few more of the basic items.
 items = {apples: {price: 1, qyt: 5}, kashi: {price: 2, qty:15}, mops: {price: 5, qty: 20}}
