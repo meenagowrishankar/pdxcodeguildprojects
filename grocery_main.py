@@ -1,6 +1,8 @@
-# yo mikey!!!!
 # Here is our initial list of items for our store. This will eventually live in another file once we
 # have set up a few more of the basic items.
+<<<<<<< HEAD
+items = {apples: {price: 1, qyt: 5}, kashi: {price: 2, qty:15}, mops: {price: 5, qty: 20}}
+=======
 class store(object):
 
 	#catalog of items in the inventory
@@ -10,7 +12,10 @@ class store(object):
 
 
 
+>>>>>>> FETCH_HEAD
 # This will create a basic profile for users. Later in the program buyers/sellers will be distinguished
+
+
 class Profile(object):
   def __init__(self, first_name, last_name, money, password):
     self.first_name = first_name
@@ -18,6 +23,23 @@ class Profile(object):
     self.money = money
     self.password = password
 
+<<<<<<< HEAD
+  def __str__(self):
+    return 'Customer: {0} {1}, Money: ${2}, Password: {3}'.format(self.first_name, self.last_name, self.money, self.password)
+
+
+class Buyer(Profile):
+<<<<<<< HEAD
+    pass
+
+   def Cart(self):
+    self.inventory = {}
+    
+ # we are gonna rock!
+=======
+  def Cart(self):
+    self.inventory = { }
+=======
 class Buyer(Profile):
 	def Cart(self):
 		#this will take items selected by buyer from the store items dictionary.
@@ -30,5 +52,7 @@ class User_Interface(store):
 		self.display = raw_input("what would you like to do")
 		self.options = raw_input("search, view cart, review and payment")
 
+>>>>>>> FETCH_HEAD
     
  # we are gonna rock!
+>>>>>>> FETCH_HEAD
