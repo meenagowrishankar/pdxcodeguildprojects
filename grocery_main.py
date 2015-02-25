@@ -4,13 +4,30 @@
 # =======
 
 
+class InventoryItem(object):
+    def __init__(self, name, on_hand, price):
+        self.name = name
+        self.on_hand = on_hand
+        self.price = price
+
+
 class Catalog(object):
     def __init__(self):
-        self.catalog = {'apples': {'price': 1, 'qty': 5}, 'kashi': {'price': 2, 'qty':15}, 'mops': {'price': 5, 'qty': 20}}
+        self.catalog = {}
 
-# >>>>>>> FETCH_HEAD
-# This will create a basic profile for users. Later in the program buyers/sellers will be distinguished
+    def add_items(self):
+        item_add = raw_input('What item would you like to buy?: ')
+        item_quantity = raw_input("How many would you like to buy?: ")
+        try:
+            if item_quantity < item_add.on_hand:
+                for self.name in self.catalog:
+                    if self.catalog.items == item_add:
+                        return item_add.inventory.append()
+        except:
+            print "We can't fulfill that request"
 
+
+#  This will create a basic profile for users. Later in the program buyers/sellers will be distinguished
 
 class Profile(object):
     def __init__(self, first_name, last_name, money, password):
@@ -59,9 +76,19 @@ class Profile(object):
 # # >>>>>>> FETCH_HEAD
 #
 
+
+
+
 walmart = Catalog()
 
-print walmart.catalog
+walmart.catalog = {
+            101: InventoryItem('apples', 5, 1.00),
+            102: InventoryItem('kashi', 15, 2.15),
+            103: InventoryItem('mop', 8, 9.85),
+        }
 
-for index, items in walmart.catalog.items():
-    print index, str(items['qty']), str(items['price'])
+print walmart.add_items()
+print walmart.catalog[101].name
+
+# for index, items in walmart.catalog.items():
+#     print index, str(items['qty']), str(items['price'])
